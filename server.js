@@ -110,15 +110,15 @@ app.get("/pagecount", function (req, res) {
 });
 
 app.get("/user_page", (req, res) => {
-  if (!db) {
-    initDb(function (err) {});
-  }
-  if (db) {
-    if (err) {
-      console.log("Error running count. Message:\n" + err);
-    }
+  // if (!db) {
+  //   initDb(function (err) {});
+  // }
+  // if (db) {
+  //   if (err) {
+  //     console.log("Error running count. Message:\n" + err);
+  //   }
     res.render("view.html");
-  }
+  // }
 });
 
 // error handling
